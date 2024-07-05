@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { DepartamentoService } from '../../services/departamento.service';
-import { Departamento } from '../../models/departamento.model';
+import { DepartamentoService } from 'src/app/services/departamento.service';
+import { Departamento } from 'src/app/models/departamento.model';
 
 @Component({
     selector: 'app-create-departamento',

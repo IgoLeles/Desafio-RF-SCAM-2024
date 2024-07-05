@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { EmpregadoService } from '../../services/empregado.service';
-import { Empregado } from '../../models/empregado.model';
+import { EmpregadoService } from 'src/app/services/empregado.service';
+import { Empregado } from 'src/app/models/empregado.model';
 
 @Component({
     selector: 'app-create-empregado',

@@ -9,7 +9,7 @@ import { CreateDepartamentoComponent } from './components/create-departamento/cr
 import { EditDepartamentoComponent } from './components/edit-departamento/edit-departamento.component';
 import { ViewDepartamentoComponent } from './components/view-departamento/view-departamento.component';
 
-const routes: Routes = [
+export const routes: Routes = [
     { path: '', redirectTo: '/list-empregados', pathMatch: 'full' },
     { path: 'list-empregados', component: ListEmpregadosComponent },
     { path: 'create-empregado', component: CreateEmpregadoComponent },
