@@ -1,0 +1,6 @@
+<h2>Detalhes do Departamento</h2>
+<div *ngIf="departamento">
+    <p><strong>ID:</strong> {{ departamento.id }}</p>
+    <p><strong>Nome:</strong> {{ departamento.nome }}</p>
+    <button (click)="router.navigate(['/list-departamentos'])">Voltar</button>
+</div>

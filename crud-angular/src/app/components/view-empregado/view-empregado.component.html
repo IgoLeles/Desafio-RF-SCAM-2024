@@ -1,0 +1,8 @@
+<h2>Detalhes do Empregado</h2>
+<div *ngIf="empregado">
+    <p><strong>ID:</strong> {{ empregado.id }}</p>
+    <p><strong>Nome:</strong> {{ empregado.nome }}</p>
+    <p><strong>Email:</strong> {{ empregado.email }}</p>
+    <p><strong>Cargo:</strong> {{ empregado.cargo }}</p>
+    <button (click)="router.navigate(['/list-empregados'])">Voltar</button>
+</div>

@@ -1,0 +1,24 @@
+<h2>Lista de Empregados</h2>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Cargo</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let empregado of empregados">
+            <td>{{ empregado.id }}</td>
+            <td>{{ empregado.nome }}</td>
+            <td>{{ empregado.email }}</td>
+            <td>{{ empregado.cargo }}</td>
+            <td>
+                <button (click)="editEmpregado(empregado.id)">Editar</button>
+                <button (click)="deleteEmpregado(empregado.id)">Excluir</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

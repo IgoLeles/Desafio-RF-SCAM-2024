@@ -1,0 +1,6 @@
+<h2>Criar Departamento</h2>
+<form (ngSubmit)="createDepartamento()">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" [(ngModel)]="departamento.nome" name="nome" required>
+    <button type="submit">Criar</button>
+</form>

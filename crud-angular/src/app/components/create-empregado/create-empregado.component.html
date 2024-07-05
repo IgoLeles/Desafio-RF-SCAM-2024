@@ -1,0 +1,10 @@
+<h2>Criar Empregado</h2>
+<form (ngSubmit)="createEmpregado()">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" [(ngModel)]="empregado.nome" name="nome" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" [(ngModel)]="empregado.email" name="email" required>
+    <label for="cargo">Cargo:</label>
+    <input type="text" id="cargo" [(ngModel)]="empregado.cargo" name="cargo" required>
+    <button type="submit">Criar</button>
+</form>
